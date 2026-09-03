@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN echo "===== /app =====" && find /app -maxdepth 4 -type f | sort
+RUN chmod +x /app/Eaglercraft/run.sh
 
-CMD ["./Eaglercraft/run.sh"]
+CMD ["/app/Eaglercraft/run.sh"]
