@@ -4,4 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-CMD ["bash", "-c", "cd Eaglercraft && ./run.sh"]
+RUN chmod +x /app/Eaglercraft/run.sh
+
+CMD ["./Eaglercraft/run.sh"]
