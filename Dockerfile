@@ -1,8 +1,8 @@
 FROM eclipse-temurin:11-jre
 
-WORKDIR /app
+WORKDIR /app/Eaglercraft
 
-COPY . .
+COPY . /app
 
 RUN chmod +x /app/Eaglercraft/run.sh
 
